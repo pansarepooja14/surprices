@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>gallary</title>
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/font-awesome_5.8.1.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<style>
+    body{
+        font-family: Arial, sans-serif;
+        margin: 0;
+        background-image: url("img/5.jpeg");
+    }
+    /*-------------------main header------------------*/
+    .main-header{
+        background: white url("img/5.jpeg")scroll center;
+        color: white;
+        font-size: 32px;
+        padding: 10px 15px;
+        text-align: center;
+        width: 100%;
+        height:150px;
+    }
+    .main-header h2{
+        font-family: Algerian;
+        text-shadow: 0 0 10px navy;
+    }
+    /*-----gallary--------*/
+    .gallery-section{
+        text-align: center;
+        margin: 10px auto;
+    }
+    .gallery-figure{
+        border: 2px solid white;
+        width: 350px;
+        margin: 5px;
+        display: inline-block;
+        padding: 5px;
+        border-radius: 10px;
+        height:350px;
+    }
+    .gallery-figure:hover{
+        box-shadow: 0 0 10px white;
+        cursor: pointer;
+    }
+    .gallery-zoom{
+        width: 350px;
+        height: 350px;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+    .gallery-zoom img{
+        width: inherit;
+        height: inherit;
+        border-radius: 10px;
+        transition: all 0.5s;
+    }
+    .gallery-zoom:hover img{
+        transform: scale(1.2,1.2);
+    }
+    .gallery-figure figcaption{
+        color: red;
+        padding: 10px;
+    }
+    #aud{
+        display: none;
+    }
+</style>
+<body>
+
+<!-- Main header-->
+<header class="main-header animated slideInDown">
+
+    <marquee><h2>I LOVE YOU..SAMUU..Miss You So Much...    I LOVE YOU..SAMUU..Miss You So Much...     I LOVE YOU..SAMUU...Miss You So Much...I LOVE YOU..SAMUU...Miss You So Much...</marquee></h2>
+</header>
+
+<!--gallary-section-->
+<section class="gallery-section ">
+    <!--laptop 1-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated swing">
+            <img src="img/6.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+    <!--laptop 2-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated slideInDown">
+            <img src="img/2.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+    <!--laptop 3-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated swing">
+            <img src="img/11.jpeg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+    <!--laptop 4-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated slideInLeft">
+            <img src="img/9.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+    <!--mobile 5-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated swing">
+            <img src="img/7.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+
+    <!--mobile 6-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated slideInRight">
+            <img src="img/10.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+    <!--mobile 7-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated bounceIn">
+            <img src="img/12.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+    <!--mobile 4-->
+    <figure class="gallery-figure">
+        <div class="gallery-zoom animated bounceIn">
+            <img src="img/8.jpg">
+        </div>
+        <figcaption></figcaption>
+    </figure>
+</section>
+
+
+
+<audio controls autoplay id="aud" loop>
+    <source src="audio/song2.mpeg" type="audio/mpeg">
+</audio>
+<br><br><br>
+
+<div style="width: 1000px; text-align: center;margin-top:3px;margin-left: 10%;">
+    <a href="third.html" style="text-decoration: none; color: white; font-size: 25px;">Click here to go next page--->>></a>
+</div>
+
+</body>
+</html>
